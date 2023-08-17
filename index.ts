@@ -62,9 +62,12 @@ console.log(`${answers.Firstvalue} - ${answers.Secondvalue}`+" " +"= "+ chalk.ye
 else if(answers.operator == "Multiplication"){
   console.log(`${answers.Firstvalue} * ${answers.Secondvalue}`+" " +"= "+ chalk.yellow(`${answers.Firstvalue *answers.Secondvalue}`))
 }
-else if (answers.operation == "Division"){
+else if(answers.operator == "Division"){
   console.log(`${answers.Firstvalue} / ${answers.Secondvalue}`+ " " +"= "+chalk.yellow(`${answers.Firstvalue/answers.Secondvalue}`))
  
+}
+else{
+  console.log(chalk.red("No operaration selected"));
 }
 };
     
